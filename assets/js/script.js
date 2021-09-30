@@ -1,6 +1,6 @@
 var dayHour = moment().format("h a");
-//var onlyhour = moment().format("h");
-var lahora = moment().format("H"); // comparing the id with 24 hour to chance the class
+var onlyhour = moment().format("H");
+//var lahora = moment().format("H"); // comparing the id with 24 hour to chance the class
 var days = moment().endOf('day').fromNow();
 
 setInterval (function (){
@@ -21,9 +21,9 @@ $('.form-control').each(function() {
    console.log(compa);
     var formi = $('.form-control')
 
-    if ( compa < lahora) {
+    if ( compa < onlyhour) {
       $(this).addClass("form-control  bg-secondary")
-    }else if  (compa ==  lahora)    {
+    }else if  (compa ==  onlyhour)    {
       $(this).addClass("form-control  bg-danger")
     }
     else
