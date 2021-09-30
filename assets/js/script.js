@@ -1,6 +1,6 @@
 var dayHour = moment().format("h a");
 //var onlyhour = moment().format("h");
-var lahora = moment().format("h");
+var lahora = moment().format("H"); // comparing the id with 24 hour to chance the class
 var days = moment().endOf('day').fromNow();
 
 setInterval (function (){
