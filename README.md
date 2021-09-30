@@ -9,5 +9,6 @@ and if it is not yet the time it will be green
 
 This project was created with HTML, CSS, Bootstrap and Javascript.
 
+![image](https://user-images.githubusercontent.com/57916204/135383781-576245c8-62ad-4e8e-b911-4ee009c142c3.png)
 
 https://tallerdeldiablo.github.io/Workday-planner/
