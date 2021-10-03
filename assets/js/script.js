@@ -24,17 +24,20 @@ $('.form-control').each(function() { //compare each id that is iqual to each hou
 
 var todos = [''];
 
+
+
 //---------save localStorage 9 am
 
  function save9() {
-   let inputSave = document.getElementById('9')      
+   let inputSave = document.getElementById('9');  
   
    const key = inputSave.value;
  
    localStorage.setItem('Input9', key)
   
-   localStorage.getItem(key);
-   inputSave.value = key;
+  
+  
+ 
 }
 
 //save localStorage 10 am
@@ -121,3 +124,40 @@ function save17() {
    localStorage.getItem(key);
    inputSave2.value = key;
 }
+function localset() {
+   var inEl = $('.form-control');
+   for (var i = 0; i < inEl.length; i++) {
+       var dataStorage = 'Input' + i+9;
+       inEl[i].value = localStorage.getItem(dataStorage);
+   }
+} 
+localset();
+ var inEl = $('.form-control');
+ //get local storGE
+
+ let inputSave = document.getElementById('9');
+ inputSave.value = localStorage.getItem("Input9");
+
+ let inputSaved = document.getElementById('10');
+inputSaved.value = localStorage.getItem("Input10");
+
+let inputSave2 = document.getElementById('11');
+inputSave2.value = localStorage.getItem("Input11");
+
+let inputSave3 = document.getElementById('12');
+inputSave3.value = localStorage.getItem("Input12");
+
+let inputSave4 = document.getElementById('13');
+inputSave4.value = localStorage.getItem("Input13");
+
+let inputSave5 = document.getElementById('14');
+inputSave5.value = localStorage.getItem("Input14");
+
+let inputSave6 = document.getElementById('15');
+inputSave6.value = localStorage.getItem("Input15");
+
+let inputSave7 = document.getElementById('16');
+inputSave7.value = localStorage.getItem("Input16");
+
+let inputSave8 = document.getElementById('17');
+inputSave8.value = localStorage.getItem("Input17");
